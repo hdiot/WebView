@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         mWebView.loadUrl("http://iamhouhuan.vicp.io:40710/h_listening/login/login.jsp");
                                                         //设置webview打开的链接
-        mWebView.setWebViewClient(new WebViewClient(){
+
+        mWebView.setWebViewClient(new WebViewClient(){  //设置不适用第三方浏览器打开网页
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 //返回值是true的时候控制去WebView打开，为false调用系统浏览器或第三方浏览器
