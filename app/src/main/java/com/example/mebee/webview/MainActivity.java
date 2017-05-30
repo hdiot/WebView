@@ -31,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
         WebSettings WebSet = mWebView.getSettings();    //获取webview设置
         WebSet.setJavaScriptEnabled(true);              //设置JavaScript支持
 
+        WebSet.setSupportZoom(true);            // 设置可以支持缩放
+
+        WebSet.setBuiltInZoomControls(true);    // 设置出现缩放工具
+
+        WebSet.setUseWideViewPort(true);        //扩大比例的缩放
+
+        WebSet.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);   //自适应屏幕
+        WebSet.setLoadWithOverviewMode(true);
+
         mWebView.loadUrl("http://iamhouhuan.vicp.io:40710/h_listening/login/login.jsp");
                                                         //设置webview打开的链接
 
