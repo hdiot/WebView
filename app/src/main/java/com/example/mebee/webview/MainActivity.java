@@ -10,6 +10,10 @@ public class MainActivity extends AppCompatActivity {
 
     private WebView mWebView;
 
+    /**
+     * 每个活动被调用时先调用onCreate()方法，这是关于Android中Activity生命周期的知识
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
